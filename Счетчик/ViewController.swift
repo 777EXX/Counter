@@ -8,12 +8,22 @@
 import UIKit
 
 class ViewController: UIViewController {
+@IBOutlet var scoreLabel: UILabel!
+private var score = 0
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBAction func button(sender: UIButton) {
+        score += 1
+        scoreLabel.text = "\(score)"
     }
 
+override func viewDidLoad() {
+    super.viewDidLoad()
+        
 
+}
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+
+    }
 }
 
